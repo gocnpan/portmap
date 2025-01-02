@@ -14,8 +14,8 @@ import "time"
 import "sync"
 import "strconv"
 import denet "github.com/hlandau/degoutils/net"
-import "github.com/hlandau/portmap/gateway"
-import "github.com/hlandau/portmap/ssdp"
+import "github.com/gocnpan/portmap/gateway"
+import "github.com/gocnpan/portmap/ssdp"
 
 // Identifies a transport layer protocol.
 type Protocol int

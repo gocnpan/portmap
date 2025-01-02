@@ -1,12 +1,12 @@
 NAT Port Mapping Library for Go
 ===============================
 
-[![godocs.io](https://godocs.io/github.com/hlandau/portmap?status.svg)](https://godocs.io/github.com/hlandau/portmap) [![Build status](https://github.com/hlandau/portmap/actions/workflows/go.yml/badge.svg)](#)
+[![godocs.io](https://godocs.io/github.com/gocnpan/portmap?status.svg)](https://godocs.io/github.com/gocnpan/portmap) [![Build status](https://github.com/gocnpan/portmap/actions/workflows/go.yml/badge.svg)](#)
 
 Example:
 
 ```go
-import "github.com/hlandau/portmap"
+import "github.com/gocnpan/portmap"
 import "fmt"
 
 func Example() {

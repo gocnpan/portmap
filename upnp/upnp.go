@@ -1,16 +1,19 @@
 // Package upnp implements low level UPnP port mapping protocol implementation functions.
 package upnp
 
-import "net/http"
-import "net/url"
-import gnet "net"
-import "encoding/xml"
-import "errors"
-import "fmt"
-import "math/rand"
-import "strings"
-import "time"
-import "html"
+import (
+	"net/http"
+	"net/url"
+
+	"encoding/xml"
+	"errors"
+	"fmt"
+	"html"
+	"math/rand"
+	gnet "net"
+	"strings"
+	"time"
+)
 
 // Protocol Structures
 
@@ -177,6 +180,9 @@ func randInRange(low, high uint16) uint16 {
 func Map(upnpURL string, protocol Protocol, internalPort uint16,
 	externalPort uint16, name string, duration time.Duration) (actualExternalPort uint16, err error) {
 	wurl, err := getWANIPControlURL(upnpURL)
+	if err != nil {
+		return externalPort, err
+	}
 
 	if externalPort == 0 {
 		externalPort = randInRange(1025, 65000)

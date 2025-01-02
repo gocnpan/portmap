@@ -1,11 +1,14 @@
 package portmap
 
-import "net"
-import "time"
-import "github.com/hlandau/portmap/ssdp"
-import "github.com/hlandau/portmap/upnp"
-import "github.com/hlandau/portmap/natpmp"
-import "github.com/hlandau/xlog"
+import (
+	"net"
+	"time"
+
+	"github.com/gocnpan/portmap/natpmp"
+	"github.com/gocnpan/portmap/ssdp"
+	"github.com/gocnpan/portmap/upnp"
+	"github.com/hlandau/xlog"
+)
 
 var log, Log = xlog.NewQuiet("portmap")
 

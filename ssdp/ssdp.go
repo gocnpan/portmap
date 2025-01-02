@@ -3,7 +3,7 @@
 package ssdp
 
 import "net/url"
-import "github.com/hlandau/portmap/ssdp/ssdpbase"
+import "github.com/gocnpan/portmap/ssdp/ssdpbase"
 import "github.com/hlandau/degoutils/log"
 import "time"
 import "sync"

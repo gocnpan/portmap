@@ -1,8 +1,11 @@
 package portmap
 
-import "net"
-import "github.com/hlandau/portmap/gateway"
-import "github.com/hlandau/portmap/natpmp"
+import (
+	"net"
+
+	"github.com/gocnpan/portmap/gateway"
+	"github.com/gocnpan/portmap/natpmp"
+)
 
 // Attempt to obtain the external IP address from the default gateway.
 //
